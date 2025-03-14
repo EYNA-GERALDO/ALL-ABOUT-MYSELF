@@ -1,0 +1,114 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Header and Navigation Bar */
+header {
+    background-color: #2C3E50;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav .logo h1 {
+    color: #ebf0f1e0;
+    font-size: 24px;
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f2f5f6;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* Section Styling */
+section {
+    padding: 60px 0;
+    margin: 40px 0;
+    background: linear-gradient(#00ffc3,#00ff6a);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+section .content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section h2 {
+    color: #2C3E50;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 18px;
+    color: #080b0b;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2C3E50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    section .content {
+        width: 95%;
+    }
+}
